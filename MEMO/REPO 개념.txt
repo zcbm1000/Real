@@ -1,0 +1,8 @@
+Remote Repo → Git hub(레파지토리)
+드라이브 개념, 플랫폼에 해당
+타인과 공유가능
+
+Local  REpo → PC
+내 개인 PC에 저장
+Remote Repo 에 올리기전에 공유가힘듬
+

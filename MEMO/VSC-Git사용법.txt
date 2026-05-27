@@ -1,0 +1,23 @@
+로컬디스크(c:)에서 Program Files 에서 Git 
+
+
+내PC 우클리하여 속성접속 
+관련링크: 고급시스템 설정 
+환경변수 집입하여 시스템 변수 진입하여 git cmd 
+파일경로를 복사하여 붙여넣으면됨
+
+git commit -am 
+add와 commit 을 같이해줌
+단 새로 만든 파일에 한해서는 불가능함.
+
+git add .; git commit -m "테스트 "로
+git add . 하고 git commit -m "테스트" 한다.
+
+git add .; git commit -m "테스트 "; git push origin main
+git add . 하고 git commit -m "테스트" 하고, git push 한다.
+
+가능은 하나 비 추천함..
+
+
+VS코드에서 초록색으로 표시되는 파일은 untracked파일
+VS코드에서 주황색으로 표시되는 파일은 modified파일

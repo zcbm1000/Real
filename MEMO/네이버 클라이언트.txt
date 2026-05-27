@@ -1,0 +1,8 @@
+
+NAVER
+
+Client ID
+'wIKTurHRqyCe1FodJ3fm'
+
+Client Secret
+'cg6uqa1Hsz'

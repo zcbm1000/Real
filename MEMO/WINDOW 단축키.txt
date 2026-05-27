@@ -1,0 +1,5 @@
+Window 단축키
+
+WINDOW+SHIFT+S = 이미지 캡처 도구
+WINDOW+SHIFT+T = 텍스트 캡처 도구
+CTRL+SHIFT+T   = 인터넷 되돌리기

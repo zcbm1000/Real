@@ -1,0 +1,33 @@
+EXCEL 단축키
+
+SUM     합계함수
+AVERAGE 평균함수
+COUNT   데이터가 입력된 셀의 개수(숫자만 포함)
+COUNTA  데이터가 입력된 셀의 개수(문자,숫자를 포함)
+COUNTIF 데이터가 입력된 셀의 개수(조건부서식을 포함)
+＊       100을 이상을 기준으로 잡을시 100을 넘는셀만 카운트함
+
+F4 반복작업
+
+ALT+H     홈
+ALT+H A L 왼쪽정렬
+ALT+H C 2 중앙정렬
+ALT+H R   오른쪽 정렬
+ALT+H H   배경색
+ALT+H M   셀서식
+ALT+H M C 셀 병합 후 가운데 정렬
+ALT+H M M 셀 병합
+ALT+H M U 셀 분할
+ALT+H O E 셀 서식창
+ALT+H O I 셀 넓이 맞추기
+ALT+H O A 셀 높이 맞추기
+ALT+H B A 셀 테두리 및 안쪽선 제작(얇은선)
+ALT+H B T 셀 테두리 제작(굵은선)
+
+CTRL+A          전체 선택
+CTRL+R          좌측 셀 복사
+CTRL+T          표 제작
+CTRL+SHIFT+;    현재 시각 입력
+CTRL+SHIFT+↓(↑) 데이터 입력된 열 선택
+CTRL+SHIFT+→(←) 데이터 입력된 행 선택
+CTRL+G          옵션선택

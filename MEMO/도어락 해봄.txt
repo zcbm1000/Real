@@ -1,0 +1,25 @@
+'''
+도어락작동 원리
+사용자가 비밀번호를 설정함
+입력한 비밀번호가 사전에 설정한 비밀번호와 동일하다면 잠금장치가 해제됨
+입력한 비밀번호가 사전에 설정한 비밀번호와 다르다면
+비밀번호가 달르니 재입력의 기회를줌
+3번 실패하면 잠금장치가 1분간 입력불가상태
+'''
+
+password = input('초기 비밀번호 설정:') + '#'
+attempts = 0
+limit = 3
+while True:
+
+    inputNum = (input('비밀번호를 입력하세요( 종료: #):'))
+    if inputNum == password:
+        print('열림')
+        break
+    else: 
+        attempts += 1
+        if limit > attempts:
+             print(f'{attempts}회 실패하셨습니다.재시도 하세요')
+        else:     
+            print(f'{attempts}회 실패로 종료합니다.')
+            break

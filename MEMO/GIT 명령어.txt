@@ -1,0 +1,188 @@
+파일 생성후 진입하여 빈칸에 우클릭
+Open Git bash here
+
+명령어 해석
+EX)git config --global user.email "1번파일"
+   프로  명령     옵션     환경변수     
+
+modified: file(적색글씨)
+작업물이 수정되었으나 add랑 commit이 되지않음
+다시 add 와 commit 을해야함
+
+git init
+저장소 설정
+
+git config --global user.email "zcbm1000@gmail.com"
+이메일 정보 입력
+
+git config --global user.name "zcbm1000
+사용자 정보 입력
+
+git config user.email
+입력된 이메일 확인
+
+git config user.name
+입력된 사용자 확인
+
+Clear
+내역 지우기
+
+$ git config --list
+등록된 리스트 확인
+
+Q (Quit 의 약자)
+등록된 리스트 뒤로가기
+
+git status
+상태값 확인
+- untracked files(파일명은 적색으로 표시)
+Git 에서 관리를 하지않는 상태(주로 새로만든 파일)
+
+git add "파일명"
+관리대상이 아닌 파일을 stage로 올림
+
+  ↕ 위 아래 명령어는 서로 상반됨
+  
+git restore --staged "예시파일"
+스테이지에 올려놓은 예시파일을 다시내림
+
+git add . .
+현재 stage에 올라가지 않은 파일을 전부올림
+
+git commit -m "첫번째 작업물(내용으로남김 주로 시간 작성자)"
+스테이지에 올려놓은 파일을 Local Repo에 올림
+
+ ex) git commit -m "첫번째작업물"
+ dw-007@DESKTOP-6CJSGD3 MINGW64 /c/_KTK/git test (master)
+$ git commit -m " 첫번째작업물"
+[master (root-commit) 57c9232]  첫번째작업물
+ 1 file changed, 1 insertion(+)
+ create mode 100644 doc.txt
+ 위에 방식으로 출력되면 정상
+
+git remote add origin https://github.com/zcbm1000/myremote.git
+깃허브에 등록된 주소를 깃에 등록함
+※ remote: Permission to zcbm1000/myremote.git denied to applemint1173.
+  fatal: unable to access 'https://github.com/zcbm1000/myremote.git/': The requested URL returned error: 403(권한부족)
+  해당 내용 출력시 권한이 부족함 검색에 "자격증명관리자" 검색 후 "windows 자격 증명" 클릭하여 github.com 에있는 자격 제거 후 재 시도할것
+ㅎ
+git remote -v 
+주소 등록 확인
+
+git branch -M main
+main으로 브랜치변경
+
+git push origin main
+로컬 레파지토리에 등록
+
+git log
+ 작업한 로그를 확인
+commit 57c92322d8228b3d4afc8a99a0bac265ebf3b11c(시리얼번호)
+Author: zcbm1000 <zcbm1000@gmail.com>(작성자)
+Date:   Tue Apr 28 16:30:30 2026 +0900(작성시각)
+
+git checkout 시리얼번호(전체는 없어도되며 8~10자리정도 추천)
+로그를 지우며 해당위치로 이동(과거시점으로 돌아감)
+
+git checkout master
+
+commit 0dfb4e7c8dcf536cf83c69be24d412b7e08512e1 (HEAD , master)
+
+commit 0dfb4e7c8dcf536cf83c69be24d412b7e08512e1 (HEAD -> master)
+
+git rm "C Test.txt"
+C Test.txt를 삭제함
+
+
+
+Clone 방법------------------------------------------------------------------------------------------------
+
+Git init 을 사용하지않ㅡ음 / init 은 레파지토리를 생성하는것이기에 사용하지않음
+
+git clone https://github.com/zcbm1000/myremote.git .
+레파지토리에 올라와있는 파일을 복제해서 가져옴
+※Cloning into '.'...
+  remote: Enumerating objects: 6, done.
+  remote: Counting objects: 100% (6/6), done.
+  remote: Compressing objects: 100% (2/2), done.
+  remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
+  Receiving objects: 100% (6/6), done.
+  불러오기 완료시 100% 표기됨
+  
+  불러오기 후 수정 하여 다시 등록시 
+git add "파일명"
+관리대상이 아닌 파일을 stage로 올림
+  
+git restore --staged "예시파일"
+스테이지에 올려놓은 예시파일을 다시내림
+
+git push origin main
+로컬 레파지토리에 등록
+
+GitHub에서 작업물까지 확인할것
+
+
+
+PULL 방법-------------------------------------------------------------------------------------------------
+git pull origin main
+git hub 에서 추가내용 불러옴
+
+주의사항
+1번pc가 1,2,3,4를 작업 및 레파지토리에 등록후 2번pc가 1,2,3,5를 등록하면 충돌남
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+저장소 생성
+이메일 사용자 등록
+상태확인
+에드 및 커밋
+브랜치 메인변경
+푸시
+허브 등록완료
+
+
+
+풀 안하고 작업시
+푸시랑 풀 두개다 불가
+
+애드 및 커밋
+푸시하기전에 풀할것
+작업내용을 따로 백업해둔뒤
+
+삭제 후 깃 클론으로 허브에서 따오는게 낫다
+작업내용을 붙여넣어서 복구함
+--------------------------------------------
+.gitignore 파일에(뒤에 확장자가 있으면 안됨)
+doc.txt
+doc.txt는 관리대상에서 빠짐 git으로 등록이 안됨 add . 을 해도 올라가지않음
+
+주의사항 .gitignore 안에 제거할 파일명은 확장자 포함해야함
+이미 add된 파일은 "git remove --cached 파일명" 명령어로 제거가능
+
+
+
+
+파일명
+.gitignore.txt   (X)
+.gitignore       (O)
+
+제거하고싶은 파일적을시
+removetest.txt (o)
+./removetest.txt(x)
+removetest(x)
+
+
+
+example/
+
+example 이라는 폴더 자체를 무시함
+
+* .log
+
+log 확장자로 표기된사항 전부 무시
