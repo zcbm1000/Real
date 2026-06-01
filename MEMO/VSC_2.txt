@@ -213,11 +213,13 @@ container data type
 
 대표적인 예로 list(리스트), tuple(튜플), dictionary(딕셔너리)			  
 			  
+python -m(옵션, m은모듈) 폴더.파일
+python -m member.member_service  
 			  
 			  
-			  
-			  
-			  
+import os 
+파이썬에서 os 모듈은 운영체제와 직접 상호작용할 수 있도록 도와주는 표준 라이브러리입니다. 파일/디렉터리 관리, 경로 처리, 환경 변수 접근, 프로세스 제어 등 다양한 기능을 제공
+
 			  
 			  
 			  
