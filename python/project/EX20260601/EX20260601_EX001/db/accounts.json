@@ -1,21 +1,8 @@
 {
-    "gildong": {
-        "36c63692-2d0e-411c-890d-d4275188139a": {
-            "balance": 15000,
-            "histories": [
-                {
-                    "dAmount": 10000,
-                    "dHistory": "월급",
-                    "dRegDate": "2026-06-02 10:24:37",
-                    "dModDate": "2026-06-02 10:24:37"
-                },
-                {
-                    "dAmount": 5000,
-                    "dHistory": "월급",
-                    "dRegDate": "2026-06-02 10:24:28",
-                    "dModDate": "2026-06-02 10:24:28"
-                }
-            ]
+    "nayun": {
+        "bd66068a-7c38-4d44-98d3-61fc00d2183b": {
+            "balance": 0,
+            "histories": []
         }
     }
 }

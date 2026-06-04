@@ -2,6 +2,7 @@ import config
 from member import member_service
 from bank import bank_service
 from memo import memo_service
+from todo import todo_service
 
 def main():
     flag = True
@@ -25,7 +26,7 @@ def main():
         elif menuNum == config.TODO_SERVICE:
             # todoService = todo_service.todoService()
             # todoService.run()
-            pass
+            todo_service.TodoService().run()
 
         elif menuNum == config.SYSTEM_OUT:
             flag = False

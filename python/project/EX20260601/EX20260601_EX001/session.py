@@ -1,4 +1,4 @@
-signInedMemberId = 'gildong'
+signInedMemberId = ''
 
 # setter 의 역할: 값을 설정함
 def setSignInedMemberId(mId):
