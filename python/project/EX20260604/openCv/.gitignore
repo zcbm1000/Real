@@ -2,6 +2,7 @@
 venv/
 .venv/
 env/
+res/
 
 # pyenv (프로젝트 내에 생성된 경우)
 .python-version

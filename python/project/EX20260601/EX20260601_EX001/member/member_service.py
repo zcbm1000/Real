@@ -152,10 +152,11 @@ class MemberService:
     def load_members(self):
         with open(self.dbFile, 'r', encoding='utf-8') as f:
             return json.load(f)
-
+        
+# 아래 파일을 직접 실행했을 경우에만 다음 코드를 실행
 if __name__ == '__main__':
-    memberSerive = MemberService()
-    memberSerive.run()
+    memberService = MemberService()
+    memberService.run()
 
 
 
