@@ -19,7 +19,7 @@ print(flag)
 flag = False
 print(flag)
 
-num = 10
+num = 10 
 print(type(num))
 
 mum = 3.14
