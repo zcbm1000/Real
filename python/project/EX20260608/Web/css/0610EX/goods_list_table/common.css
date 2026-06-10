@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #7a2929;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
