@@ -25,13 +25,13 @@ http://hoazzinews.tistroy.com/72
 
 
 파이썬 설치
-http://hoazzinews.tistroy.com/10
+https://hoazzinews.tistory.com/10
 
 처음 해보는 파이썬 코딩
-http://hoazzinews.tistroy.com/11
+https://hoazzinews.tistroy.com/11
 
 VSCODE 설치 및 기본 설정
-http://hoazzinews.tistroy.com/12
+https://hoazzinews.tistroy.com/12
 
 CSS FLEX
 https://studiomeal.com/archives/197/
