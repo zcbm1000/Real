@@ -2,15 +2,14 @@
 /* margin은 외부 여백을 설정하는 것이며 상 하 좌 우 따로따로 설정 가능하다. (0 0 0 0) */
 
 #wrap {
-    width: 800px;
-    padding:80px 50px 80px 50px;
+    width: 800px;  /*width 는 가로넓이를 정함*/
+    padding:80px 50px 80px 50px;/*padding 은 상자 내부의 여백조절(상, 우, 하, 좌*/
     margin: 0 auto 0 auto;
     border: 1px solid #cccccc;
     border-radius: 50px;
     box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.5);
 }
 
-/* width 가로 너비 길이 */
 /* border 첫 번쨰는 선의 두께, 두번째는 실선이냐 점선이냐 차이 */
 /* border-radius : 테두리 둥글게 */
 /* margin : 상하좌우 외부 여백, 특히 좌 우는 자동으로 설정되게 끔 auto로 설정함 */

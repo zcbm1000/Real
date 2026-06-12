@@ -1,0 +1,54 @@
+
+#menu{
+    float:left;
+}
+#menu div.sidebar{
+    width: 200px;
+    border: 3px solid #dadada;
+    border-radius: 1px;
+    padding: 10px;
+}
+
+#menu div.sidebar p{
+    margin: 20px;
+    font-size: 0.8em;
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  float:left;
+  margin-left: 30px;
+}
+
+#wrap div.to{
+    font-style:italic;
+    margin-bottom: 50px;
+}
+
+#wrap div.head{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom:double #dadada;
+    padding: 15px;
+}
+
+#wrap div.body{
+    width: 90%;
+    margin: 20px auto;
+}
+
+#wrap div.body p{
+    margin: 15px;
+}
+
+#wrap div.from{
+    font-style:italic;
+    margin-top: 50px;
+    text-align: right;
+}
