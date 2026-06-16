@@ -17,7 +17,7 @@
 
 /* 메뉴 START */
 #wrap > div.menu_wrap {
-    text-align: center;
+    text-align: center
 }
 
 #wrap > div.menu_wrap a {
@@ -42,12 +42,14 @@
 /* 회원가입 START */
 #wrap > div.sign_up_wrap {
     text-align: center;
+    display:'none';
 }
 /* 회원가입 END */
 
 /* 회원로그인 START */
 #wrap > div.sign_in_wrap {
     text-align: center;
+    display:'none';
 }
 /* 회원로그인 END */
 
@@ -58,6 +60,7 @@
     margin:10px;
     border:1px solid #dadada;
     border-radius: 7px;
+    display:'none';
 }
 #wrap > div.write_wrap > button{
     padding:20px;
@@ -72,6 +75,7 @@
 /* 일기 리스트 START*/
 #wrap > div.list_wrap{
     text-align: center;
+    display:'none';
 }
 /* 일기 리스트 END*/
 
