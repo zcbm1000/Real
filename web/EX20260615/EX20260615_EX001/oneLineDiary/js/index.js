@@ -50,6 +50,21 @@ function addEvents() {
 
     });
 
+    let deleteMenuBtn = document.querySelector('div.menu_wrap a.delete');
+    deleteMenuBtn.addEventListener('click', function() {
+        console.log('deleteMenuBtn CLICKED!!');
+        
+        removeMember();
+        alert('CONGRATURATION REMOVE!!');
+
+        signInedMemberId == '';
+
+        setMenuByStatus(SIGN_OUT_STATUS);
+
+        showSelectedView(HOME_VIEW);
+
+    });
+
     let writeMenuBtn = document.querySelector('div.menu_wrap a.write');
     writeMenuBtn.addEventListener('click', function() {
         console.log('writeMenuBtn CLICKED!!');
@@ -133,9 +148,11 @@ function addEvents() {
 
         let txt = document.querySelector('div.write_wrap input').value;
 
-        addDiary(getCurrentDate() + txt);                 
+        addDiary(getCurrentDate() + txt);
 
         removeValue([document.querySelector('div.write_wrap input')]);
+
+        showSelectedView(LIST_VIEW);
 
     });
 
@@ -143,8 +160,6 @@ function addEvents() {
 
 function removeValue(eles) {
     console.log('removeValue() CALLED!!');
-
-    listWrap.textContent=''
 
     for(let i = 0; i < eles.length; i++)
         eles[i].value = '';
@@ -154,19 +169,20 @@ function removeValue(eles) {
 function listUpDiaries() {
     console.log('listUpDiaries() CALLED!!');
 
-    let diaryArr = searchDiaries();
+    listWrap.textContent = '';
 
-    for(let i = 0; i < diaryArr.length; i++){
+    let diaryArr = searchDiaries();
+    
+    for (let i = 0; i < diaryArr.length; i++) {
 
         let tpl = document.querySelector('#list_item');
         let clone = document.importNode(tpl.content, true);
         let txt = clone.querySelector('div.txt');
         txt.textContent = diaryArr[i];
- 
-        listWrap.prepend(clone);
-        
-    }
 
+        listWrap.prepend(clone);
+
+    }    
 
 
 }
