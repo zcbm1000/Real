@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "<h1>Hello Flask - 전종호</h1>"
+    return "<h1>Hello Flask - TK</h1>"
 
 # http://192.168.1.186:5000/hello
 @app.route('/hello')
