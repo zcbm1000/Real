@@ -10,11 +10,13 @@ member_bp = Blueprint(
 # signup_form
 @member_bp.route('/signup_form', methods=['GET'])
 def signup_form():
+
     return render_template('signup_form.html')
 
 # signup_confirm
 @member_bp.route('/signup_confirm', methods=['POST'])
 def signup_confirm():
+
     mId = request.form['mId']
     mPw = request.form['mPw']
     mMail = request.form['mMail']
@@ -50,6 +52,7 @@ def signin_form():
 # signin_confirm
 @member_bp.route('/signin_confirm', methods=['POST'])
 def signin_confirm():
+
     mId = request.form['mId']
     mPw = request.form['mPw']
 
@@ -69,3 +72,49 @@ def signout_confirm():
     session.pop('signinedMemberId', None)
 
     return redirect('/')
+
+
+# /member/modify_form
+@member_bp.route('/modify_form')
+def modify_form():
+
+    members = load_members()
+    member = members[session.get('signinedMemberId')]       # 현재 로그인 되어있는 회원정보 수집
+
+    return render_template(
+        'modify_form.html',
+        member = member
+
+    )
+
+# /member/modify_confirm
+@member_bp.route('/modify_confirm', methods=['POST'])
+def modify_confirm():
+
+    mPw = request.form['mPw']
+    mMail = request.form['mMail']
+    mPhone = request.form['mPhone']
+
+    members = load_members()
+    member = members[mId]
+    member['mPw'] = mPw
+    member['mMial'] = mMail
+    member['mPhone'] = mPhone
+    save_members(members)
+
+    return render_template('modify_result.html')
+
+
+# /member/delete_confirm
+def delete_confirm():
+
+    members = load_members()
+    signinedMemberId = session.get('signinedMemberId')
+    del members[signinedMemberId]
+    save_members(members)
+
+    session.clear()
+
+    return render_template('delete_result.html')
+
+    
