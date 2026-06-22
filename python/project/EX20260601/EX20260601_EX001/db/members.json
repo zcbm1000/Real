@@ -6,5 +6,13 @@
         "mPhone": "00000000000",
         "mRegDate": "2026-06-03 13:51:36",
         "mModDate": "2026-06-03 13:51:36"
+    },
+    "gildong": {
+        "mId": "gildong",
+        "mPw": "1234",
+        "mMail": "gildong@gmail.com",
+        "mPhone": "010-1111-1111",
+        "mRegDate": "2026-06-19 12:11:11",
+        "mModDate": "2026-06-19 12:11:11"
     }
 }
