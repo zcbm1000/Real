@@ -20,7 +20,7 @@
 # # 손 안에 동전 개수를 입력하면 짝수는 0, 홀수는 1을 출력하는 프로그램
 # inputData = int(input('손 안에 동전 수를 입력하세요 '))
 # result = inputData % 2
-# # print(result)
+# print(result)
 
 # #--------- 몫(//)
 # print(11//3)     # 3 정수형 자료

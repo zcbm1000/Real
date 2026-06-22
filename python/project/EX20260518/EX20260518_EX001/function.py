@@ -40,7 +40,7 @@ printIntro()              # 함수를 출력(함수호출) | 출력하면 함수
 # stopTemperatureSensor()
 
 
-# Quiz 내 노트북은 몇 인치일까?
+# # Quiz 내 노트북은 몇 인치일까?
 '''
 노트북 구매했는데 노트북 사이즈에 맞는 파이치를 구매하려한다 사이즈 표에 인치로만 표기되어있음
 cm 을 인치로 바꿔주는 함수를 만들어라
@@ -58,7 +58,7 @@ cm 을 인치로 바꿔주는 함수를 만들어라
 # convertUnit()
 
 
-# QUiz) 이동 거리를 계산하는 함수
+# # QUiz) 이동 거리를 계산하는 함수
 '''
 길동이는 5시간 동안 3km의 속도로 등산을했습니다.
 길도이가 이동한 시간과 속도를 입력하면 이동한 거리를 계산해 주는 프로그램
@@ -98,7 +98,7 @@ cm 을 인치로 바꿔주는 함수를 만들어라
 # fun4()
 
 
-# Quiz) 다국어 인사말 프로그램
+# # Quiz) 다국어 인사말 프로그램
 '''
 출신 국가를 선택하면 해당하는 국가의 인사말이 출력되는 프로그램
 1. 대한민국   2. USA   3. JAPAN
@@ -125,60 +125,60 @@ cm 을 인치로 바꿔주는 함수를 만들어라
 #     introJap()
 
 
-# Quiz) 계산기 프로그램
+# # Quiz) 계산기 프로그램
 '''
 사용자가 숫자 2개를 입력하고 연산자를 선택하면 연산결과가 출력되는 프로그램
 ''' 
 
-def calculator():
+# def calculator():
 
-    if selectedOperator == 1 :  # 덧셈
-        add()
+#     if selectedOperator == 1 :  # 덧셈
+#         add()
 
-    elif selectedOperator == 2 :    # 뺼셈
-        sub()
+#     elif selectedOperator == 2 :    # 뺼셈
+#         sub()
 
-    elif selectedOperator == 3 :    # 곱셈
-        mul()
+#     elif selectedOperator == 3 :    # 곱셈
+#         mul()
 
-    elif selectedOperator == 4 :    # 나눗셈
-        dib()
-
-
-inputNum1 = float(input('숫자를 입력하세요')) 
-selectedOperator = int(input('연산자 선택:    1. 덧셈   2. 뺄셈   3. 곱셈   4. 나눗셈'))
-inputNum2 = float(input('숫자를 입력하세요'))
+#     elif selectedOperator == 4 :    # 나눗셈
+#         dib()
 
 
-def add():
-    print(f'덧셈 결과는 {inputNum1 + inputNum2}')
-
-def sub():    
-    print(f'뺄셈 결과는 {inputNum1 - inputNum2}')
-
-def mul():
-    print(f'곱셈 결과는 {inputNum1 * inputNum2}')
-
-def dib():  
-    print(f'나눗셈 결과는 {inputNum1 / inputNum2}')
-
-calculator()
+# inputNum1 = float(input('숫자를 입력하세요')) 
+# selectedOperator = int(input('연산자 선택:    1. 덧셈   2. 뺄셈   3. 곱셈   4. 나눗셈'))
+# inputNum2 = float(input('숫자를 입력하세요'))
 
 
-# 지역변수와 전역변수가있음
+# def add():
+#     print(f'덧셈 결과는 {inputNum1 + inputNum2}')
+
+# def sub():    
+#     print(f'뺄셈 결과는 {inputNum1 - inputNum2}')
+
+# def mul():
+#     print(f'곱셈 결과는 {inputNum1 * inputNum2}')
+
+# def dib():  
+#     print(f'나눗셈 결과는 {inputNum1 / inputNum2}')
+
+# calculator()
 
 
-num = 1 # 전역변수
-        # 전역변수는 함수 내에서도 사용이 가능하다 변수값이 수정되면 오류가발생함
+# # 지역변수와 전역변수가있음
 
 
-def nums():
-    num = 1   # 지역 변수
-              # 지역 변수는 전역에서쓸수없음, 함수 내에서만 적용이됨
+# num = 1 # 전역변수
+#         # 전역변수는 함수 내에서도 사용이 가능하다 변수값이 수정되면 오류가발생함
 
 
-# global 키워드
-# 함수 내부에서 전역변수를 수정하고싶을떄 사용을함
+# def nums():
+#     num = 1   # 지역 변수
+#               # 지역 변수는 전역에서쓸수없음, 함수 내에서만 적용이됨
+
+
+# # global 키워드
+# # 함수 내부에서 전역변수를 수정하고싶을떄 사용을함
 
 
 

@@ -1,4 +1,3 @@
-
 from config_dir import config
 from member_dir import session
 from db_dir     import member_DB
@@ -18,14 +17,10 @@ while flag:
     menuNum = ''
     if session.signInedMemberId == '':
         # sign out상태
-        print('sign_out 상태')
         menuNum = int(input('1. sign_up  2. sign_in  6. write  7. read  0. end\n 선택:'))
-        
     else:
         # sign in 상태
-        print('sign_in  상태')
         menuNum = int(input('3. modify  4. delete  5. sign_out  6. write  7. read  0. end\n 선택:'))
-
 
     if menuNum == config.SIGN_UP:
         print('1. sign_up')

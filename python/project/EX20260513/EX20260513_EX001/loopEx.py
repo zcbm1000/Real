@@ -6,23 +6,36 @@
 33 짝짝
 '''
 
-# for num in range(1,100):
+# for num in range(1, 100):
 
-#     firstNum = num // 10
-#     seconNum = num % 10
-#     clap = ''
+#     if num <= 9:                # 1의 단위
+#         if num % 3 == 0:
+#             # print(f'{num}, 짝!')
+#             print(num, ', 짝!', end='')
+#         else:
+#             print(num, end='')
+#     else:                       # 10의 단위 
+#         # print(f'{num}')       # 12 > 1, 2 : 16 > 1, 6 : 99 > 9, 9
+#         # printStr = str(num)
+#         print(num, end='')
 
-# if firstNum == 3 or firstNum == 6 or firstNum == 9:
-#     clap += '짝!'
-#     print(f'num: {num}, {clap}')
+#         firstNum = num // 10    # 15 > 15 // 10 -> 1
+#         secondNum = num % 10    # 15 > 15 % 10  -> 5, 30 > 0
 
-# if seconNum == 3 or seconNum == 6 or seconNum == 9:
-#     clap += '짝!'
-#     print(f'num: {num}, {clap}')
-# if clap
+#         if firstNum % 3 == 0:
+#             # print(f'짝!')
+#             # printStr += ', 짝!'
+#             print(', 짝!', end='')
+
+#         if secondNum % 3 == 0 and secondNum != 0:
+#             # print(f'짝!')
+#             # printStr += ', 짝!'
+#             print(', 짝!', end='')
+        
+#     print()
 
 
-#Quiz) 열차 교차 시간 알아냐기
+# # Quiz) 열차 교차 시간 알아냐기
 '''
 대전역에는 3개의 노선의 열차가 09시부터 18시까지 교차 운행한다.
 3대의 열차가 교차하는 시간을 구해 열차 충돌 사고를 막으세요.
@@ -80,7 +93,7 @@
 #          print(' crash') 
 
 
-# Quiz) 로그인 기능 만들기
+# # Quiz) 로그인 기능 만들기
 '''
 시스템 관리자(admin) 로그인 기능을 만들어봅시다.
 관리자가 암호를 입력하고 로그인을 시도할 때 암호가 틀렷다면 '암호를 다시 확인하세요.' 를 출력
@@ -105,7 +118,7 @@
 #         print('로그인에 실패하였습니다. 암호를 재 확인하세요.')
 #         count += 1
 
-# Quiz) 무한루프에 빠지는것
+# # Quiz) 무한루프에 빠지는것
 '''
 while True: 
     print('hello') O
@@ -120,7 +133,8 @@ while not 0:
     print('hello') O
 '''
 
-# Quiz) 팩토리얼 만들기
+# 
+# # Quiz) 팩토리얼 만들기
 '''
 사용자가 입력한 양수를 이용해 팩토리얼 값을 구하는 프로그램
 팩토리얼(1) 예시 4! 는 1*2*3*4*
@@ -135,7 +149,7 @@ while not 0:
 
 
 
-# Quiz) Up Down 게임
+# # Quiz) Up Down 게임
 '''
 0부터 100까지의 난수를 발생시키고 사용자가 난수를 맞힐 때까지 물어보는 프로그램
 ------요구사항------

@@ -1,6 +1,6 @@
 
-# from config_dir import config
-# from member_dir import session
+from config_dir import config
+from member_dir import session
 
 flag = True
 

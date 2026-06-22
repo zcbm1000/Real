@@ -4,13 +4,11 @@ print(yourname)
 intro = "hello"
 print(intro)
 
-intro = "안녕하세요"
-print(intro)
+intro1 = "안녕하세요"
+print(intro1)
 
 print("안녕하세요 " + yourname + "님")  
  
-yourname
-
 money = 10000
 print(money)
 
