@@ -139,6 +139,18 @@ git hub 에서 추가내용 불러옴
 
 
 
+-----------------------------------------
+git fetch origin
+원격 저장소(origin)에서 최신 변경 사항을 가져오는 명령어
+
+git branch -r
+원격(remote) 브랜치 목록을 보여주는 명령어
+
+git branch 브랜치 명
+브랜치 명으로 이동을함
+
+git branch --delete 브랜치 명
+브랜치 명 삭제함.
 
 
 
